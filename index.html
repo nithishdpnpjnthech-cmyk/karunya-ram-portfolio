@@ -11,7 +11,33 @@
             contain-intrinsic-size: 3000px 1500px
         }
     </style>
+<style>
+        :root{ --forced-text-color: #000000; }
+        html, body, #page, .site, .site-content, .content-area, .entry-content, .elementor, .elementor-widget-container, .entry-title, .site-title, h1, h2, h3, h4, h5, h6, p, li, span, a, button, input, select, textarea {
+            color: #000000 !important;
+        }
+        a, a:visited, a:hover, a:active { color: #000000 !important; }
+        svg, svg * { fill: currentColor !important; stroke: currentColor !important; }
 
+         .main-header-menu .current-menu-item>.menu-link {
+                color: var(--site-nav-active) !important;
+                font-weight: 700 !important;
+            }
+
+            .elementor-menu-toggle svg,
+            .elementor-menu-toggle svg path,
+            .elementor-menu-toggle .e-font-icon-svg {
+                fill: #d4af37 !important;
+                color: #d4af37 !important;
+                stroke: #d4af37 !important;
+            }
+
+            #menu-1-c50c4d2 .elementor-item,
+            #menu-1-299ee55 .elementor-item,
+            #menu-2-700c25a .elementor-item {
+                color: #000000 !important;
+            }
+    </style>
     <!-- This site is optimized with the Yoast SEO plugin v24.0 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>Karunya Ram’s</title>
     <meta name="description" content="Explore Karunya Ram's&#039;s journey of  Film Industries, highlighting his leadership, innovation, and expertise in digital transformation." />
@@ -175,6 +201,46 @@
     </style>
 
 
+    <!-- Force all page content text to black as requested (section-level overrides included) -->
+    <style>
+        :root{ --forced-text-color: #000000; }
+        html, body, #page, .site, .site-content, .content-area, .entry-content, .elementor, .elementor-widget-container, .entry-title, .site-title, h1, h2, h3, h4, h5, h6, p, li, span, a, button, input, select, textarea {
+            color: #000000 !important;
+        }
+        a, a:visited, a:hover, a:active { color: #000000 !important; }
+        /* Make SVG icons inherit text color */
+        svg, svg * { fill: currentColor !important; stroke: currentColor !important; }
+
+        /* Section-level and inline overrides to catch exported inline styles and widget-level colors */
+        .elementor-section,
+        .elementor-column,
+        .elementor-widget,
+        .elementor-widget-container,
+        .elementor-widget-heading .elementor-heading-title,
+        .elementor-widget-text-editor,
+        .elementor-text,
+        .wp-block,
+        .wp-block-column,
+        .entry-content .wp-block,
+        .elementor-widget-wrap {
+            color: #000000 !important;
+        }
+
+        /* Override any inline `style="color:..."` attributes within elementor / widgets */
+        .elementor-section [style*="color"],
+        .elementor-widget [style*="color"],
+        [class*="elementor"] [style*="color"],
+        [style*="color"] {
+            color: #000000 !important;
+        }
+
+        /* Footer and list widgets: ensure links and list items are black */
+        footer, .site-footer, .elementor-location-footer, .site-footer .elementor-widget, .site-footer .elementor-widget-container, .site-footer a, .site-footer .elementor-widget a, .elementor-widget-list a, .elementor-widget-container ul li a, .elementor-widget-container .elementor-list-item a, .elementor-widget-container .elementor-heading-title, .elementor-widget-container .elementor-text, .elementor-widget-container .elementor-text p, .elementor-widget-container .elementor-text a, .widget, .widget a {
+            color: #000000 !important;
+            fill: currentColor !important;
+            stroke: currentColor !important;
+        }
+    </style>
     <link rel='dns-prefetch' href='//www.googletagmanager.com' />
     <link rel="alternate" type="application/rss+xml" title="Karunya Ram's &raquo; Feed" href="https://www.siddahmed.com/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Karunya Ram's &raquo; Comments Feed" href="https://www.siddahmed.com/comments/feed/" />
@@ -3287,20 +3353,20 @@
             padding-right: 0px;
             padding-bottom: 0px;
             padding-left: 0px;
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
         html {
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
         .elementor,
         .elementor-9 {
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
         .has-black-background-color {
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
         a:where(:not(.wp-element-button)) {
@@ -3403,10 +3469,10 @@
         }
 
         .has-black-background-color {
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
-        /* Override all elementor elements with black backgrounds - replace with #3a3120 */
+        /* Override all elementor elements with black backgrounds - replace with #d7c7b9 */
         .elementor-element[style*="background-color: #000"],
         .elementor-element[style*="background-color:#000"],
         .elementor-element[style*="background-color: #000000"],
@@ -3415,21 +3481,21 @@
         .e-con[style*="background-color:#000"],
         .e-con[style*="background-color: #000000"],
         .e-con[style*="background-color:#000000"] {
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
-        /* Override any elementor element with black background from external CSS - replace with #3a3120 */
+        /* Override any elementor element with black background from external CSS - replace with #d7c7b9 */
         .elementor-9 .elementor-element:not([style*="background-color"])[class*="background"],
         .elementor-9 .e-con:not([style*="background-color"]) {
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
-        /* Override any black background colors from external CSS - replace with #3a3120 */
+        /* Override any black background colors from external CSS - replace with #d7c7b9 */
         *[style*="background-color: rgb(0, 0, 0)"],
         *[style*="background-color:rgb(0,0,0)"],
         *[style*="background-color: rgba(0, 0, 0, 1)"],
         *[style*="background-color:rgba(0,0,0,1)"] {
-            background-color: #3a3120 !important;
+            background-color: #d7c7b9 !important;
         }
 
         .has-cyan-bluish-gray-background-color {
@@ -4039,10 +4105,10 @@ flexibility(document.documentElement);
             "knowsLanguage": ["English", "Tamil", "Hindi"]
         }
     </script>
-   <link rel="icon" href="/logo/KARUNYA RAM (4).png" sizes="32x32" />
-    <link rel="icon" href="/logo/KARUNYA RAM (4).png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="/logo/KARUNYA RAM (4).png" />
-    <meta name="msapplication-TileImage" content="/logo/KARUNYA RAM (4).png" />
+   <link rel="icon" href="/logo/karunya ram (5).png" sizes="32x32" />
+    <link rel="icon" href="/logo/karunya ram (5).png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/logo/karunya ram (5).png" />
+    <meta name="msapplication-TileImage" content="/logo/karunya ram (5).png" />
 </head>
 
 <body class="home wp-singular page-template page-template-templates page-template-builder-fullwidth page-template-templatesbuilder-fullwidth-php page page-id-9 wp-custom-logo wp-embed-responsive wp-theme-astra exclusive-addons-elementor ast-desktop ast-plain-container ast-no-sidebar astra-4.11.13 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-kit-6 elementor-page elementor-page-9">
@@ -4054,7 +4120,7 @@ flexibility(document.documentElement);
                     <div class="elementor-element elementor-element-f6a9f9f exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="f6a9f9f" data-element_type="widget" data-widget_type="theme-site-logo.default">
                         <div class="elementor-widget-container">
                             <a href="/index.html">
-                        <img fetchpriority="high" decoding="async" width="2000" height="1413" src="/logo/KARUNYA RAM (4).png" sizes="(max-width: 2000px) 100vw, 2000px" style="width:2000px;height:auto;max-width:100%;display:block;" />				</a>
+                        <img fetchpriority="high" decoding="async" width="2000" height="1413" src="/logo/karunya ram (5).png" sizes="(max-width: 2000px) 100vw, 2000px" style="width:2000px;height:auto;max-width:100%;display:block;" />				</a>
 
  			</a>
                         </div>
@@ -4139,7 +4205,7 @@ flexibility(document.documentElement);
                     <div class="elementor-element elementor-element-bd1189b exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="bd1189b" data-element_type="widget" data-widget_type="theme-site-logo.default">
                         <div class="elementor-widget-container">
                             <a href="/index.html">
-			<img fetchpriority="high" decoding="async" width="1500" height="1060" src="/logo/KARUNYA RAM (4).png" class="attachment-full size-full wp-image-161" alt="Siddahmed Logo"  sizes="(max-width: 1500px) 100vw, 1500px" />				</a>
+			<img fetchpriority="high" decoding="async" width="1500" height="1060" src="/logo/karunya ram (5).png" class="attachment-full size-full wp-image-161" alt="Siddahmed Logo"  sizes="(max-width: 1500px) 100vw, 1500px" />				</a>
                         </div>
                     </div>
                 </div>
@@ -4527,11 +4593,11 @@ flexibility(document.documentElement);
                 <div class="e-con-inner">
                     <div class="elementor-element elementor-element-553ae6c exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="553ae6c" data-element_type="widget" data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <h2 class="elementor-heading-title elementor-size-default">
+                            <h2 class="elementor-heading-title elementor-size-default" style="color:#000000 !important;">
                                 Karunya Ram is a multifaceted Indian actress, entrepreneur, and visionary leader. 
                                 She is the Founder of <strong>Avira Udupi</strong> and <strong>Samskar Trust</strong>—two dynamic initiatives that operate under the umbrella of her parent organization, <strong>Infinite Dreams</strong>. 
                                 With a passion for creativity, culture, and community empowerment, Karunya Ram seamlessly blends art and purpose—championing causes that uplift local artisans, promote sustainable development, and inspire young minds to dream beyond boundaries. 
-                                <br><br>
+                                <br><br></h2>
                                 
                         </div>
                     </div>

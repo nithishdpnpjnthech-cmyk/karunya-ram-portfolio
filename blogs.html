@@ -11,7 +11,33 @@
             contain-intrinsic-size: 3000px 1500px
         }
     </style>
+<style>
+        :root{ --forced-text-color: #000000; }
+        html, body, #page, .site, .site-content, .content-area, .entry-content, .elementor, .elementor-widget-container, .entry-title, .site-title, h1, h2, h3, h4, h5, h6, p, li, span, a, button, input, select, textarea {
+            color: #000000 !important;
+        }
+        a, a:visited, a:hover, a:active { color: #000000 !important; }
+        svg, svg * { fill: currentColor !important; stroke: currentColor !important; }
 
+         .main-header-menu .current-menu-item>.menu-link {
+                color: var(--site-nav-active) !important;
+                font-weight: 700 !important;
+            }
+
+            .elementor-menu-toggle svg,
+            .elementor-menu-toggle svg path,
+            .elementor-menu-toggle .e-font-icon-svg {
+                fill: #d4af37 !important;
+                color: #d4af37 !important;
+                stroke: #d4af37 !important;
+            }
+
+            #menu-1-c50c4d2 .elementor-item,
+            #menu-1-299ee55 .elementor-item,
+            #menu-2-700c25a .elementor-item {
+                color: #000000 !important;
+            }
+    </style>
     <!-- This site is optimized with the Yoast SEO plugin v24.0 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>Karunya Ram's | Blogs </title>
     <meta name="description" content="Explore Blogs of Karunya Ram's, founder and CEO of AVIRA UDUPU." />
@@ -118,6 +144,163 @@
     </style>
 
 
+    <!-- Force all page content text to black as requested (section-level overrides included) -->
+    <style>
+        :root{ --forced-text-color: #000000; }
+        html, body, #page, .site, .site-content, .content-area, .entry-content, .elementor, .elementor-widget-container, .entry-title, .site-title, h1, h2, h3, h4, h5, h6, p, li, span, a, button, input, select, textarea {
+            color: #000000 !important;
+        }
+        a, a:visited, a:hover, a:active { color: #000000 !important; }
+        svg, svg * { fill: currentColor !important; stroke: currentColor !important; }
+
+        .elementor-section,
+        .elementor-column,
+        .elementor-widget,
+        .elementor-widget-container,
+        .elementor-widget-heading .elementor-heading-title,
+        .elementor-widget-text-editor,
+        .elementor-text,
+        .wp-block,
+        .wp-block-column,
+        .entry-content .wp-block,
+        .elementor-widget-wrap {
+            color: #000000 !important;
+        }
+
+        .elementor-section [style*="color"],
+        .elementor-widget [style*="color"],
+        [class*="elementor"] [style*="color"],
+        [style*="color"] {
+            color: #000000 !important;
+        }
+
+        /* Footer and list widgets: ensure links and list items are black */
+        footer, .site-footer, .elementor-location-footer, .site-footer .elementor-widget, .site-footer .elementor-widget-container, .site-footer a, .site-footer .elementor-widget a, .elementor-widget-list a, .elementor-widget-container ul li a, .elementor-widget-container .elementor-list-item a, .elementor-widget-container .elementor-heading-title, .elementor-widget-container .elementor-text, .elementor-widget-container .elementor-text p, .elementor-widget-container .elementor-text a, .widget, .widget a {
+            color: #000000 !important;
+            fill: currentColor !important;
+            stroke: currentColor !important;
+        }
+    </style>
+    <!-- Footer / quick-links / social: ensure widget list items render black -->
+    <style>
+        .elementor-location-footer .elementor-widget-container a,
+        footer .elementor-widget-container a,
+        .elementor-location-footer .elementor-widget-container li,
+        footer .elementor-widget-container li,
+        .elementor-location-footer .elementor-widget-container .elementor-list-item,
+        .elementor-location-footer .elementor-widget-container .elementor-list-item a,
+        .elementor-location-footer .elementor-widget-container .elementor-heading-title,
+        .elementor-location-footer .elementor-widget-container .elementor-text,
+        .site-footer .elementor-widget-container a,
+        .site-footer .elementor-list-item,
+        .elementor-widget-list .elementor-icon-list-text,
+        .elementor-widget-list .elementor-icon-list-item {
+            color: #000000 !important;
+            opacity: 1 !important;
+        }
+        .elementor-location-footer svg, footer svg, .site-footer svg { fill: currentColor !important; stroke: currentColor !important; }
+    </style>
+    <!-- Strong footer override: force all quick-links/social text & icons to pure black -->
+    <style>
+        :root{ --force-footer-black: #000000; }
+        :where(.elementor-location-footer, footer, .site-footer, .elementor-location-footer .elementor-column, .elementor-location-footer .elementor-widget, .elementor-location-footer .elementor-widget-container) * {
+            color: var(--force-footer-black) !important;
+            fill: var(--force-footer-black) !important;
+            stroke: var(--force-footer-black) !important;
+            opacity: 1 !important;
+            text-shadow: none !important;
+            filter: none !important;
+        }
+        :where(.elementor-location-footer a, .elementor-location-footer li, .elementor-location-footer .elementor-list-item, .elementor-location-footer .elementor-icon-list-text, .elementor-location-footer .elementor-icon-list-item, .elementor-location-footer .elementor-social-icon a) {
+            color: var(--force-footer-black) !important;
+        }
+        :where(.elementor-location-footer [style*="color"], .elementor-location-footer [style*="fill"], .elementor-location-footer [style*="stroke"]) {
+            color: var(--force-footer-black) !important;
+            fill: var(--force-footer-black) !important;
+            stroke: var(--force-footer-black) !important;
+        }
+    </style>
+    <!-- Extremely specific footer override: force all footer/quick-links/social text + SVGs to pure black -->
+    <style>
+        /* Broad but high-specificity targets */
+        .elementor-location-footer .elementor-widget-container a,
+        .site-footer .elementor-widget-container a,
+        .elementor-location-footer a,
+        .site-footer a,
+        .elementor-location-footer .elementor-list-item,
+        .site-footer .elementor-list-item,
+        .elementor-widget-list .elementor-icon-list-text,
+        .elementor-widget .elementor-icon-list-item,
+        .elementor-widget-container .elementor-list-item a,
+        .elementor-widget-container ul li a,
+        .elementor-widget-container .elementor-icon-list-item,
+        .elementor-widget .elementor-icon .elementor-icon-list-text,
+        .elementor-social-icon, .elementor-social-icon a, .elementor-social-icon svg, .elementor-social a svg,
+        .elementor-widget-container a:link, .elementor-widget-container a:visited,
+        .elementor-widget-container a:hover, .elementor-widget-container a:active,
+        .footer-widgets * {
+            color: #000000 !important;
+            -webkit-text-fill-color: #000000 !important;
+            fill: #000000 !important;
+            stroke: #000000 !important;
+            opacity: 1 !important;
+            filter: none !important;
+            text-shadow: none !important;
+            background-image: none !important;
+        }
+
+        /* Pseudo-elements */
+        .elementor-widget-container a::before, .elementor-widget-container a::after,
+        .elementor-widget-container ::before, .elementor-widget-container ::after {
+            color: #000000 !important;
+            -webkit-text-fill-color: #000000 !important;
+        }
+
+        /* ID fallbacks from exported menus/widgets */
+        #menu-1-c50c4d2 .elementor-item,
+        #menu-1-299ee55 .elementor-item,
+        #menu-2-700c25a .elementor-item {
+            color: #000000 !important;
+        }
+    </style>
+    <!-- Extremely specific footer override: force all footer/quick-links/social text + SVGs to pure black -->
+    <style>
+        .elementor-location-footer .elementor-widget-container a,
+        .site-footer .elementor-widget-container a,
+        .elementor-location-footer a,
+        .site-footer a,
+        .elementor-location-footer .elementor-list-item,
+        .site-footer .elementor-list-item,
+        .elementor-widget-list .elementor-icon-list-text,
+        .elementor-widget .elementor-icon-list-item,
+        .elementor-widget-container .elementor-list-item a,
+        .elementor-widget-container ul li a,
+        .elementor-widget-container .elementor-icon-list-item,
+        .elementor-widget .elementor-icon .elementor-icon-list-text,
+        .elementor-social-icon, .elementor-social-icon a, .elementor-social-icon svg, .elementor-social a svg,
+        .elementor-widget-container a:link, .elementor-widget-container a:visited,
+        .elementor-widget-container a:hover, .elementor-widget-container a:active,
+        .footer-widgets * {
+            color: #000000 !important;
+            -webkit-text-fill-color: #000000 !important;
+            fill: #000000 !important;
+            stroke: #000000 !important;
+            opacity: 1 !important;
+            filter: none !important;
+            text-shadow: none !important;
+            background-image: none !important;
+        }
+        .elementor-widget-container a::before, .elementor-widget-container a::after,
+        .elementor-widget-container ::before, .elementor-widget-container ::after {
+            color: #000000 !important;
+            -webkit-text-fill-color: #000000 !important;
+        }
+        #menu-1-c50c4d2 .elementor-item,
+        #menu-1-299ee55 .elementor-item,
+        #menu-2-700c25a .elementor-item {
+            color: #000000 !important;
+        }
+    </style>
     <link rel='dns-prefetch' href='//www.googletagmanager.com' />
     <link rel="alternate" type="application/rss+xml" title="Karunya Ram's &raquo; Feed" href="https://www.siddahmed.com/feed/" />
     <link rel="alternate" type="application/rss+xml" title="Karunya Ram's &raquo; Comments Feed" href="https://www.siddahmed.com/comments/feed/" />
@@ -3814,13 +3997,13 @@ flexibility(document.documentElement);
             }
         }
     </style>
-    <link rel="icon" href="/logo/KARUNYA RAM (4).png" sizes="32x32" />
-    <link rel="icon" href="/logo/KARUNYA RAM (4).png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="/logo/KARUNYA RAM (4).png" />
-    <meta name="msapplication-TileImage" content="/logo/KARUNYA RAM (4).png" />
+    <link rel="icon" href="/logo/karunya ram (5).png" sizes="32x32" />
+    <link rel="icon" href="/logo/karunya ram (5).png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/logo/karunya ram (5).png" />
+    <meta name="msapplication-TileImage" content="/logo/karunya ram (5).png" />
     <!-- User-requested page-wide background override -->
     <style>
-        :root{--user-page-bg:#3a3120}
+        :root{--user-page-bg:#d7c7b9}
         html, body, #page, .site, .site-content, section, div, .elementor-section, .elementor-column, .elementor-widget, .wp-block-group, .wp-block-cover { background-color: var(--user-page-bg) !important; background-image: none !important; }
         *::before, *::after { background: none !important; }
         body, .entry-content, .elementor-widget-container { color: #eae1d6 !important; }
@@ -3837,7 +4020,7 @@ flexibility(document.documentElement);
                     <div class="elementor-element elementor-element-aa7d366 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="aa7d366" data-element_type="widget" data-widget_type="theme-site-logo.default">
                         <div class="elementor-widget-container">
                             <a href="/index.html">
-                        <img fetchpriority="high" decoding="async" width="2000" height="1413" src="/logo/KARUNYA RAM (4).png" sizes="(max-width: 2000px) 100vw, 2000px" style="width:2000px;height:auto;max-width:100%;display:block;" />				</a>
+                        <img fetchpriority="high" decoding="async" width="2000" height="1413" src="/logo/karunya ram (5).png" sizes="(max-width: 2000px) 100vw, 2000px" style="width:2000px;height:auto;max-width:100%;display:block;" />				</a>
                         </div>
                     </div>
                 </div>
@@ -3913,29 +4096,29 @@ flexibility(document.documentElement);
                         <div class="elementor-widget-container">
                             <div class="elementor-social-icons-wrapper elementor-grid">
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;"class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-12afadb" href="https://www.instagram.com/ikarunya?igsh=cTNmamI0M3N2YTdr" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Instagram</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;"class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-12afadb" href="https://www.instagram.com/ikarunya?igsh=cTNmamI0M3N2YTdr" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Instagram</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-14c75d9" href="https://x.com/Karunya_oficial?s=20" target="_blank">
-						<span style="background-color:#3a3120;"  class="elementor-screen-only">X-twitter</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-x-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-14c75d9" href="https://x.com/Karunya_oficial?s=20" target="_blank">
+						<span style="background-color:#d7c7b9;"  class="elementor-screen-only">X-twitter</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-x-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-4e4b867" href="https://www.facebook.com/karunya.ram.568" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Facebook-f</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-4e4b867" href="https://www.facebook.com/karunya.ram.568" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Facebook-f</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-73fd9b0" href="#" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Linkedin-in</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-73fd9b0" href="#" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Linkedin-in</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f9501b5" href="https://youtube.com/@karunyaram7755?si=8MwdmwxUEMvZIbtJ" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Youtube</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f9501b5" href="https://youtube.com/@karunyaram7755?si=8MwdmwxUEMvZIbtJ" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Youtube</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>                                </a>
                                 </span>
                             </div>
                         </div>
@@ -3949,7 +4132,7 @@ flexibility(document.documentElement);
                     <div class="elementor-element elementor-element-2f50dc0 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="2f50dc0" data-element_type="widget" data-widget_type="theme-site-logo.default">
                         <div class="elementor-widget-container">
                             <a href="/index.html">
-			<img fetchpriority="high" decoding="async" width="1500" height="1060" src="/logo/KARUNYA RAM (4).png" class="attachment-full size-full wp-image-161" alt="Siddahmed Logo"  sizes="(max-width: 1500px) 100vw, 1500px" />				</a>
+			<img fetchpriority="high" decoding="async" width="1500" height="1060" src="/logo/karunya ram (5).png" class="attachment-full size-full wp-image-161" alt="Siddahmed Logo"  sizes="(max-width: 1500px) 100vw, 1500px" />				</a>
                         </div>
                     </div>
                 </div>
@@ -3959,29 +4142,29 @@ flexibility(document.documentElement);
                         <div class="elementor-widget-container">
                             <div class="elementor-social-icons-wrapper elementor-grid">
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-12afadb" href="https://www.instagram.com/ikarunya?igsh=cTNmamI0M3N2YTdr" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Instagram</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-12afadb" href="https://www.instagram.com/ikarunya?igsh=cTNmamI0M3N2YTdr" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Instagram</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-14c75d9" href="https://x.com/Karunya_oficial?s=20" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">X-twitter</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-x-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-14c75d9" href="https://x.com/Karunya_oficial?s=20" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">X-twitter</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-x-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-4e4b867" href="https://www.facebook.com/karunya.ram.568" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Facebook-f</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-repeater-item-4e4b867" href="https://www.facebook.com/karunya.ram.568" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Facebook-f</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-73fd9b0" href="#" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Linkedin-in</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-linkedin-in elementor-repeater-item-73fd9b0" href="#" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Linkedin-in</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>                                </a>
                                 </span>
                                 <span class="elementor-grid-item">
-					<a style="background-color:#3a3120;" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f9501b5" href="https://youtube.com/@karunyaram7755?si=8MwdmwxUEMvZIbtJ" target="_blank">
-						<span style="background-color:#3a3120;" class="elementor-screen-only">Youtube</span>
-                                <svg style="background-color:#3a3120;" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>                                </a>
+					<a style="background-color:#d7c7b9;" class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-f9501b5" href="https://youtube.com/@karunyaram7755?si=8MwdmwxUEMvZIbtJ" target="_blank">
+						<span style="background-color:#d7c7b9;" class="elementor-screen-only">Youtube</span>
+                                <svg style="background-color:#d7c7b9;" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>                                </a>
                                 </span>
                             </div>
                         </div>
